@@ -1,0 +1,31 @@
+SetSAIL - February 2021
+
+Logistics:
+40minute sessions, online, via zoom.  Expect 25 teachers per session?
+
+Main idea:
+My idea is to do an encryption module, but do it better!
+Specifically, I'd like to get the secret key encryption idea across,
+along with attacks and an understanding of some basic important issues
+in cryptography, and I'd like to have some tie-in to the modern world,
+and maybe a teaser for something else.  Finally, I'd really like to tie
+in the idea of *function* in a way that hopefully expands students
+understanding of what's going on.
+
+- key size
+- block-size?
+
+- frequency analysis
+- brute force
+- chosen plaintext?
+
+
+
+* English bigram and letter pair frequencies from the
+  Google Corpus Data in JSON format 
+  https://gist.github.com/lydell/c439049abac2c9226e53
+  from http://norvig.com/mayzner.html
+
+* Control from adminshell ...
+  cdvis next -or- cdvis reset -or- cdvis all
+  
