@@ -1,0 +1,25 @@
+Here is the full visibility set.  Note that
+the sub-boxes like caesar.textareas are causing
+trouble.  If I want to use them again ... better
+debug this!
+{
+  "visibility": {
+    "caesar":"on",
+    "caesar.funbox":"on",
+    "caesar.arrows":"on",
+    "caesar.textareas":"on",
+    "chained":"off",
+    "freemap":"off",
+    "engfreq":"off",
+    "countermode":"on"
+    }
+}
+
+
+
+
+display: none
+is what removes the element.
+
+
+https://seanyeh.com/pages/creating_svgs_in_javascript/
