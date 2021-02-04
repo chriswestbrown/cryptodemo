@@ -196,25 +196,35 @@
     combo.style.border = "3px solid #73AD21";
     combo.style.padding="15px";
 
-
+    /* Setting up notes so that the other elements don't
+       get in the way of selecting the notes is ... difficult! */
     var notes = document.createElement("div");
     notes.style.float="right";
-    notes.style.width="300px";
+    notes.style.width="300px";   
     notes.style.height="200px";
     notes.innerHTML = "<b>Notes</b><br>";
+    var ntaWrapper = document.createElement("div");
+    ntaWrapper.style.position="relative";
+    ntaWrapper.style.width="100%";
+    ntaWrapper.style.height="100%";
     var nta = document.createElement("textarea");
     nta.style.width="100%";
     nta.style.height="100%";
-    notes.appendChild(nta);
-
+    nta.style.position="absolute";
+    nta.style.zIndex="300";
+    nta.style.left="0px";
+    nta.style.top="0px";
+    ntaWrapper.appendChild(nta);
+    notes.appendChild(ntaWrapper);
     combo.appendChild(notes);
 
+    /* Now add the other (non-Notes) elements! */
     combo.appendChild(C5);
     var spacer = document.createElement("div");
     spacer.style.height = "30px";
     combo.appendChild(spacer);
     combo.appendChild(C6);
-
+    
     var testsec6 = createSection("Counter mode", combo);
     document.body.appendChild(testsec6.element);
     registerVisibility("countermode",testsec6);
