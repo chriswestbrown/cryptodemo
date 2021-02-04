@@ -5,5 +5,5 @@
     "freemap":"on",
     "engfreq":"on",
     "countermode":"on"
-    }
+  }
 }

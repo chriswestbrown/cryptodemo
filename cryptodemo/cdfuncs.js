@@ -19,6 +19,10 @@ var engLetFreq = [
   2.360, 0.150, 1.974, 0.074
 ];
 
+// Given string c (assumed to consist of a single character)
+// returns [base,offset] where
+// if c is not alphabetical, base is char code of c and offset = -1
+// otherwise base is code of 'a' or 'A' and offset is distance from base
 var baseoffset = function(c) {
   let k = c.charCodeAt(0);
   if (97 <= k && k <= 122) return [97, k - 97];
@@ -26,6 +30,7 @@ var baseoffset = function(c) {
   else return [k, -1];
 };
 
+// produce HTML version of str with <br>'s inserted after width chars
 let addLineBreaks = function(str, width) {
   let A = [];
   let i = 0;

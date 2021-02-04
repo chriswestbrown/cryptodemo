@@ -5,7 +5,7 @@
       * create 'drbrown' account as first account on message board
         and post link to cryptdemo:
 
-        <a href="https://www.usnastem.net/set/cryptdemo/" target="_blank" rel="noopener noreferrer">https://www.usnastem.net/set/cryptdemo/</a>
+        <a href="https://www.usnastem.net/set/cryptodemo/" target="_blank" rel="noopener noreferrer">https://www.usnastem.net/set/cryptodemo/</a>
 	
    b. message board in tab
    c. stemcryptodemo website in tab
@@ -14,7 +14,7 @@
    f. text file with text for copy and paste up.
 
 LINKS:
-* stemcryptodemo: https://www.usnastem.net/set/cryptdemo/
+* stemcryptodemo: https://www.usnastem.net/set/cryptodemo/
 * message board : https://www.usnastem.net/set/msg/mb.html
 * admin shell   : https://www.usnastem.net/set/adminshell.html
 
@@ -59,12 +59,9 @@ LINKS:
       Now let's decrypt "twngu". ...
    c. Hopefully you all see how this works.  So to save time, instead of using pencil
       and paper I've made this tool for you to use.  (Turn on Caesar Shift in cryptools)
-      tell them to switch over to the crytotools browser tab
+      tell them to switch over to the cryptotools browser tab
 
-   d. If you go back to the message board, you'll see that I've paired everyone up.
-
-      ./printPairings.pl https://www.usnastem.net/set/msg/mb.html
-
+   d. I'm going to partner you up (in a minute!), and when I do,
       I want you and your partner to act as Alice and Bob and send each other
       messages that only your partner can read.  But before we can do this, what's
       the problem we face?  Right!  How to agree on a secret key!  In zoom, we have
@@ -73,6 +70,13 @@ LINKS:
       to the message board and send your encrypted message.  Note: please
       preface the message with the name of your intended recipient.  That'll make
       it easier to spot.
+
+      If you go back to the message board, you'll see that I've paired everyone up.
+      I want the first-listed person to choose a letter as your "key" and send a
+      private zoom chat message to your partner with the key value.  After that, all
+      communication must be done on the message board!
+
+      ./printPairings.pl https://www.usnastem.net/set/msg/mb.html
 
       <Give folks time>
 

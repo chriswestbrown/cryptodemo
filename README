@@ -1,3 +1,12 @@
+CryptoDemo
+----------
+CryptoDemo is a dynamic web page that is used to provide an
+interactive STEM module about basic symmetric encryption.
+
+
+
+
+PERSONAL NOTES
 SetSAIL - February 2021
 
 Logistics:
@@ -18,8 +27,6 @@ understanding of what's going on.
 - frequency analysis
 - brute force
 - chosen plaintext?
-
-
 
 * English bigram and letter pair frequencies from the
   Google Corpus Data in JSON format 
