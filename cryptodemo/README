@@ -1,3 +1,16 @@
+CryptoDemo
+----------
+
+Install:
+1. this directory needs to be in the virtual server's
+   root directory.
+2. <script src="cryptodemo/cdinst.js"></script>
+
+
+
+
+
+PERSONAL NOTES
 Here is the full visibility set.  Note that
 the sub-boxes like caesar.textareas are causing
 trouble.  If I want to use them again ... better
@@ -14,9 +27,6 @@ debug this!
     "countermode":"on"
     }
 }
-
-
-
 
 display: none
 is what removes the element.
