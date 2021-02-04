@@ -9,10 +9,8 @@ use strict;
 use CGI::Carp qw( fatalsToBrowser );
 use CGI qw( :standard );
 
-# "Hasher" is a module in this directory!
 use File::Basename;
 use lib dirname (__FILE__);
-use Hasher;
 
 # add msg to file of messages:
 my $msg = param("opt");
