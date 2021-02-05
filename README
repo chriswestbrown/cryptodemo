@@ -33,6 +33,40 @@ understanding of what's going on.
   https://gist.github.com/lydell/c439049abac2c9226e53
   from http://norvig.com/mayzner.html
 
-* Control from adminshell ...
-  cdvis next -or- cdvis reset -or- cdvis all
-  
+* Notes on historical ciphers
+
+1. Caesar shift - used by Caesar (according to Seutonius)
+   This is the goto intro to encryption for everyone.  Why?  Because
+   it has strong analogies to how encryption is done today.
+
+2. Alberti and later Vigenere ciphers
+   These don't encrypt a given plaintext char with the same ciphertext
+   char every time.  Big step forward. Vigenere is better and easily
+   understood as caesar shift but with different keys.  Its weakness is
+   that it repeats (with period equal to key length) which means you can
+   do Caesar shift frequency analysis (which works well with a fairly
+   small amount of cipher text) on every nth character (where n is length
+   of key).  So essentially decryption takes approx n^2 times as long and
+   requires n times more text than caesar.
+   NOTE: The way this builds on Caesar shift doesn't really have strong
+         analogies to modern encryption.
+
+3. Playfair cipher - encrypts with "block-size" two, i.e. pairs of letters
+   are mapped to pairs of letters.  This illustrates an important property
+   of modern cryptography: encrypt *blocks* of data.
+
+4. Civil War - nice website on civil war ciphers
+
+   *  http://cryptiana.web.fc2.com/code/civilwar0.htm
+
+   Some use of vigenere and even caesar (confederate cipher wheels).  And
+   different quasi-mechanical systems like the keyed rotating grill
+   (http://cryptiana.web.fc2.com/code/civilwar6.htm).  interesting stuff,
+   but doesn't necessarily have interesting analogies to modern-day crypto.
+   Many (like rotating grill) rearrange the order of letters (or words)
+   in the message rather than mapping letters to new letters.  This is
+   also true of other historical ciphers like the greek cipher stick.
+
+
+Ref's:
+  https://interestingengineering.com/11-cryptographic-methods-that-marked-history-from-the-caesar-cipher-to-enigma-code-and-beyond
