@@ -259,12 +259,12 @@ var cmencrypt = function(key,plaintext) {
 </script>
 
 <script type="text/javascript">
-  {
+ domready(function () {
   let notes = document.getElementById("notes");
   dragElement(notes);
   notes.style.top = (combo.offsetTop + 4) + "px";
   notes.style.left = (combo.offsetWidth - notes.offsetWidth + 4) + "px";
-  }
+  });
 </script>
 
 </body>
